@@ -346,6 +346,11 @@ button {
     gap: 24px;
 }
 
+.contacts-list-mobile.mobile-menu-modal {
+    justify-content: flex-start;
+}
+
+
 .contacts-item-mobile {
     font-weight: 500;
     font-size: 20px;
@@ -355,16 +360,8 @@ button {
     font-style: normal;
 }
 
-.contacts-link-mobile.email{
+.contacts-link-mobile.email {
     color: #434455;
-}
-
-.team-icon-list {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -637,9 +634,14 @@ button {
 
 .team-icon-list {
     display: flex;
-    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
+    flex-direction: row;
     gap: 24px;
+}
+
+.mobile-menu-modal.team-icon-list{
+    justify-content: flex-start;
 }
 
 .social-media-icon-item {
@@ -664,17 +666,13 @@ button {
     }
 
     .team-icon-list {
-        flex-direction: row;
+        justify-content: center;
     }
 }
 
 @media screen and (min-width: 1158px) {
     .team-item {
         width: calc((100% - 72px) / 4);
-        flex-direction: row;
-    }
-
-    .team-icon-list {
         flex-direction: row;
     }
 
